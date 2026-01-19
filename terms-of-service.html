@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Discover to Bloom Collective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-plum: #4D2C4A;
+            --warm-rose: #E88A7E;
+            --sage-green: #9BB08D;
+            --cream: #FDF8F5;
+            --charcoal: #2D2D2D;
+            --cream-transparent: rgba(253, 248, 245, 0.95);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            padding: 1.25rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--cream-transparent);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(77, 44, 74, 0.08);
+        }
+
+        .logo { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+        .logo-symbol { width: 50px; height: 50px; position: relative; }
+        .logo-circle { position: absolute; width: 32px; height: 32px; border-radius: 50%; border: 2px solid; }
+        .logo-circle-left { border-color: var(--deep-plum); left: 0; top: 9px; }
+        .logo-circle-right { border-color: var(--sage-green); right: 0; top: 9px; background: var(--cream); }
+        .logo-flower { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 18px; z-index: 2; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-text-main { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; color: var(--deep-plum); line-height: 1.2; }
+        .logo-text-sub { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 400; letter-spacing: 0.25em; color: var(--charcoal); opacity: 0.7; text-transform: uppercase; }
+
+        .back-link { 
+            text-decoration: none; 
+            color: var(--deep-plum); 
+            font-size: 0.9rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover { color: var(--warm-rose); }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgba(77, 44, 74, 0.1);
+        }
+
+        .page-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--sage-green);
+            margin-bottom: 0.75rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: var(--deep-plum);
+            margin-bottom: 1rem;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--charcoal);
+            opacity: 0.7;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--deep-plum);
+            margin: 2.5rem 0 1rem;
+        }
+
+        h3 {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--deep-plum);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--charcoal);
+            opacity: 0.9;
+        }
+
+        ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--charcoal);
+            opacity: 0.9;
+        }
+
+        a {
+            color: var(--deep-plum);
+            text-decoration: underline;
+            text-decoration-color: var(--warm-rose);
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--warm-rose);
+        }
+
+        .highlight-box {
+            background: rgba(155, 176, 141, 0.1);
+            border-left: 4px solid var(--sage-green);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .important-box {
+            background: rgba(232, 138, 126, 0.1);
+            border-left: 4px solid var(--warm-rose);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .important-box p {
+            margin-bottom: 0;
+        }
+
+        .policy-summary {
+            background: rgba(77, 44, 74, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .policy-summary h3 {
+            margin-top: 0;
+            color: var(--deep-plum);
+        }
+
+        .policy-summary ul {
+            margin-bottom: 0;
+        }
+
+        footer {
+            background: var(--charcoal);
+            color: var(--cream);
+            padding: 2rem 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--cream);
+            opacity: 0.7;
+            margin: 0 1rem;
+        }
+
+        footer a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 1rem 1.5rem; }
+            .content { padding: 7rem 1.5rem 3rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-symbol">
+                <div class="logo-circle logo-circle-left"></div>
+                <div class="logo-circle logo-circle-right"></div>
+                <div class="logo-flower">🌱</div>
+            </div>
+            <div class="logo-text">
+                <span class="logo-text-main">Discover to Bloom</span>
+                <span class="logo-text-sub">Collective</span>
+            </div>
+        </a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+
+    <main class="content">
+        <header class="page-header">
+            <p class="page-label">Legal</p>
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last Updated: January 2026</p>
+        </header>
+
+        <p>Welcome to Discover to Bloom Collective. These Terms of Service ("Terms") govern your use of our website (discover2bloom.com) and your participation in our coaching services, retreats, and programs. By accessing our website or engaging our services, you agree to be bound by these Terms.</p>
+
+        <p>Please read these Terms carefully. If you do not agree with these Terms, please do not use our services.</p>
+
+        <div class="policy-summary">
+            <h3>Quick Reference: Key Policies</h3>
+            <ul>
+                <li><strong>Cancellation:</strong> 48+ hours notice required for rescheduling</li>
+                <li><strong>No-Shows:</strong> Session is forfeited with no refund or makeup</li>
+                <li><strong>Refunds:</strong> Generally no refunds on coaching services (see details below)</li>
+                <li><strong>Age Requirement:</strong> Must be 18 years or older</li>
+            </ul>
+        </div>
+
+        <h2>1. Our Services</h2>
+        <p>Discover to Bloom Collective offers:</p>
+        <ul>
+            <li><strong>Discovery Map Retreats:</strong> 2-day immersive retreat experiences facilitated by Dr. Kim Bland</li>
+            <li><strong>Bloom Reimagined Coaching:</strong> Ongoing 1:1 coaching services</li>
+            <li><strong>Small Group Sessions:</strong> Group coaching and workshop experiences</li>
+        </ul>
+
+        <h2>2. Nature of Coaching Services</h2>
+        
+        <div class="highlight-box">
+            <p><strong>Important Distinction:</strong> Coaching is not therapy, counseling, or medical treatment. Coaches do not diagnose, treat, or provide advice for mental health conditions.</p>
+        </div>
+
+        <p>Our coaching services are designed to help you:</p>
+        <ul>
+            <li>Gain clarity on your goals, values, and purpose</li>
+            <li>Identify patterns and obstacles that may be holding you back</li>
+            <li>Develop strategies and action plans for positive change</li>
+            <li>Build accountability and momentum toward your desired outcomes</li>
+        </ul>
+
+        <p>As coaches, we ask powerful questions, provide frameworks for reflection, and support you in discovering your own insights and next steps. <strong>We do not provide advice, diagnoses, or treatment.</strong> You are responsible for your own choices, actions, and results.</p>
+
+        <p>If you are experiencing mental health challenges, we encourage you to seek support from a licensed therapist or counselor in addition to (or instead of) coaching services.</p>
+
+        <h2>3. Eligibility</h2>
+        <p>You must be at least <strong>18 years of age</strong> to use our services. By engaging our services, you represent and warrant that you are at least 18 years old and have the legal capacity to enter into these Terms.</p>
+
+        <h2>4. Scheduling & Appointments</h2>
+
+        <h3>Booking Sessions</h3>
+        <p>Coaching sessions and retreat registrations are confirmed upon receipt of payment. You will receive confirmation and any relevant details via email.</p>
+
+        <h3>Your Responsibility</h3>
+        <p>You are responsible for:</p>
+        <ul>
+            <li>Arriving on time for scheduled sessions (in person or virtual)</li>
+            <li>Having a quiet, private space for virtual coaching sessions</li>
+            <li>Coming prepared and engaged for each session</li>
+            <li>Completing any agreed-upon actions between sessions</li>
+        </ul>
+
+        <h2>5. Cancellation & Rescheduling Policy</h2>
+
+        <div class="important-box">
+            <p><strong>48-Hour Notice Required:</strong> If you need to reschedule a coaching session, please provide at least 48 hours advance notice.</p>
+        </div>
+
+        <h3>For Coaching Sessions:</h3>
+        <ul>
+            <li><strong>48+ hours notice:</strong> Session may be rescheduled at no charge (within the same billing period when applicable)</li>
+            <li><strong>Less than 48 hours notice:</strong> Session is forfeited and cannot be rescheduled or refunded</li>
+            <li><strong>No-shows:</strong> If you do not show up for a scheduled session without prior notice, the session is forfeited with no refund or makeup session provided</li>
+        </ul>
+
+        <h3>For Retreats:</h3>
+        <ul>
+            <li><strong>30+ days before retreat:</strong> Full refund minus a $150 administrative fee, OR transfer to a future retreat date</li>
+            <li><strong>14-29 days before retreat:</strong> 50% refund, OR full credit toward a future retreat</li>
+            <li><strong>Less than 14 days before retreat:</strong> No refund; credit toward a future retreat may be offered at our discretion</li>
+            <li><strong>No-shows:</strong> No refund or credit will be provided</li>
+        </ul>
+
+        <p>We understand that life happens. If you experience an emergency or extenuating circumstance, please contact us as soon as possible. We will work with you on a case-by-case basis while honoring our policies.</p>
+
+        <h2>6. Refund Policy</h2>
+
+        <h3>Coaching Services</h3>
+        <p>Due to the personalized nature of coaching and the time committed to each client relationship, <strong>coaching fees are generally non-refundable</strong> once services have begun.</p>
+
+        <ul>
+            <li><strong>Before first session:</strong> If you cancel before your first coaching session takes place, you may receive a full refund minus any administrative fees</li>
+            <li><strong>After sessions begin:</strong> No refunds for completed sessions or unused sessions in a package</li>
+            <li><strong>Payment plans:</strong> If you are on a payment plan and wish to discontinue services, you remain responsible for payments already due. We may, at our sole discretion, allow you to pause future payments, but no refunds will be issued for payments already made</li>
+        </ul>
+
+        <h3>Retreats</h3>
+        <p>Retreat refunds follow the cancellation schedule outlined in Section 5 above.</p>
+
+        <h3>Results Disclaimer</h3>
+        <p>Results from coaching depend on many factors, including your active participation, openness to reflection, commitment to taking action, and individual circumstances. <strong>We do not guarantee specific outcomes or results.</strong> The non-refundable nature of our services reflects the commitment required from both coach and client for transformation to occur.</p>
+
+        <h2>7. Payment Terms</h2>
+        <ul>
+            <li>Payment is due at the time of booking unless otherwise agreed in writing</li>
+            <li>We accept payment via credit card processed securely through Stripe</li>
+            <li>For coaching packages with payment plans, payments are due according to the agreed schedule</li>
+            <li>If a payment fails, we will contact you to update your payment information. Services may be paused until payment is received</li>
+        </ul>
+
+        <h2>8. Confidentiality</h2>
+        <p>We are committed to maintaining the confidentiality of our coaching relationships. What you share in coaching sessions and retreats remains confidential, except in the following circumstances:</p>
+        <ul>
+            <li>You provide written consent to share specific information</li>
+            <li>We are required by law to disclose information</li>
+            <li>There is an imminent risk of harm to yourself or others</li>
+        </ul>
+        <p>For group coaching and retreats, all participants are expected to maintain confidentiality regarding what other participants share.</p>
+
+        <h2>9. Intellectual Property</h2>
+        <p>All content on our website, including text, graphics, logos, frameworks (such as the BLOOM Framework and Discovery Map methodology), images, and other materials, is the property of Discover to Bloom Collective or our partners and is protected by copyright and other intellectual property laws.</p>
+        <p>You may not reproduce, distribute, modify, or create derivative works from our content without our prior written consent.</p>
+
+        <h2>10. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Discover to Bloom Collective, its owners, coaches, employees, and partners shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from:</p>
+        <ul>
+            <li>Your use of or inability to use our services</li>
+            <li>Any decisions you make or actions you take based on your participation in coaching or retreats</li>
+            <li>Any personal or professional outcomes resulting from our services</li>
+        </ul>
+        <p>Our total liability for any claim arising from these Terms or our services shall not exceed the amount you paid for the specific service giving rise to the claim.</p>
+
+        <h2>11. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Discover to Bloom Collective, its owners, coaches, employees, and partners from any claims, losses, damages, liabilities, and expenses (including legal fees) arising from your use of our services or violation of these Terms.</p>
+
+        <h2>12. Code of Conduct</h2>
+        <p>When participating in our services, you agree to:</p>
+        <ul>
+            <li>Treat coaches, staff, and fellow participants with respect</li>
+            <li>Maintain confidentiality regarding what others share in group settings</li>
+            <li>Engage honestly and authentically in the coaching process</li>
+            <li>Take responsibility for your own choices and actions</li>
+            <li>Refrain from disruptive, harmful, or inappropriate behavior</li>
+        </ul>
+        <p>We reserve the right to discontinue services to any client who violates this code of conduct, without refund.</p>
+
+        <h2>13. Changes to Services and Terms</h2>
+        <p>We reserve the right to modify our services, pricing, and these Terms at any time. Changes will not affect services already purchased unless required by law. We will notify you of material changes to these Terms by posting the updated Terms on our website.</p>
+
+        <h2>14. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the State of Colorado, without regard to its conflict of law provisions.</p>
+
+        <h2>15. Dispute Resolution</h2>
+        <p>If a dispute arises from these Terms or our services, we encourage you to contact us first to seek a resolution. If we cannot resolve the dispute informally, any legal action must be brought in the courts located in the State of Colorado.</p>
+
+        <h2>16. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+
+        <h2>17. Entire Agreement</h2>
+        <p>These Terms, together with our Privacy Policy and any coaching agreements you sign, constitute the entire agreement between you and Discover to Bloom Collective regarding our services.</p>
+
+        <h2>18. Contact Us</h2>
+        <p>If you have questions about these Terms, please contact us:</p>
+        <p>
+            <strong>Discover to Bloom Collective</strong><br>
+            Email: <a href="mailto:team@discover2bloom.com">team@discover2bloom.com</a><br>
+            Website: <a href="https://discover2bloom.com">discover2bloom.com</a>
+        </p>
+
+        <div class="highlight-box">
+            <p><strong>Thank you</strong> for choosing Discover to Bloom Collective. We're honored to walk alongside you on your transformation journey.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Discover to Bloom Collective. All rights reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
