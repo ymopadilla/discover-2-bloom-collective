@@ -139,7 +139,8 @@
         .coaches-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; max-width: 900px; margin: 0 auto; }
         .coach-card { text-align: center; background: white; padding: 2.5rem 2rem; border-radius: 20px; box-shadow: 0 4px 30px rgba(77, 44, 74, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .coach-card:hover { transform: translateY(-5px); box-shadow: 0 10px 40px rgba(77, 44, 74, 0.12); }
-        .coach-photo-placeholder { width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, var(--sage-green) 0%, var(--warm-rose) 100%); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 600; color: white; }
+        .coach-photo { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1.5rem; overflow: hidden; border: 4px solid var(--sage-green); }
+        .coach-photo img { width: 100%; height: 100%; object-fit: cover; }
         .coach-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 600; color: var(--deep-plum); margin-bottom: 0.5rem; }
         .coach-title { font-family: 'Montserrat', sans-serif; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sage-green); margin-bottom: 1.25rem; font-weight: 500; }
         .coach-description { font-size: 0.95rem; color: var(--charcoal); opacity: 0.85; line-height: 1.7; }
@@ -257,7 +258,7 @@
             .about-visual { order: -1; }
             .about-logo { max-width: 250px; }
             .coaches-grid { grid-template-columns: 1fr; gap: 2rem; }
-            .coach-photo-placeholder { width: 120px; height: 120px; font-size: 2rem; }
+            .coach-photo { width: 120px; height: 120px; }
             .journey-steps { grid-template-columns: 1fr; gap: 2rem; }
             .pathways-grid { grid-template-columns: 1fr; gap: 2rem; }
             .pathway-card-3 { grid-column: span 1; max-width: none; }
@@ -345,16 +346,16 @@
             <p class="coaches-intro">With over 20 years of combined coaching experience, we bring complementary expertise to guide your transformation journey.</p>
             <div class="coaches-grid">
                 <div class="coach-card">
-                    <div class="coach-photo-placeholder">
-                        <span>YP</span>
+                    <div class="coach-photo">
+                        <img src="yvonne-padilla.png" alt="Yvonne Padilla">
                     </div>
                     <h3>Yvonne Padilla</h3>
                     <p class="coach-title">Bloom Reimagined Coach</p>
                     <p class="coach-description">Yvonne specializes in 1:1 coaching, helping you build the psychological architecture for lasting change. She also co-facilitates small groups and workshops.</p>
                 </div>
                 <div class="coach-card">
-                    <div class="coach-photo-placeholder">
-                        <span>KB</span>
+                    <div class="coach-photo">
+                        <img src="kim-bland.png" alt="Dr. Kim Bland">
                     </div>
                     <h3>Dr. Kim Bland</h3>
                     <p class="coach-title">Discovery Coach</p>
